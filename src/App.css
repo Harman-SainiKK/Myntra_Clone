@@ -1,0 +1,414 @@
+@font-face {
+  font-family: myntraBold;
+  src: url(./Fonts/Assistant-Bold.ttf);
+}
+@font-face {
+  font-family: myntraRegular;
+  src: url(./Fonts/Assistant-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.nav {
+  height: 6vw;
+  width: 100%;
+  background-color: white;
+  padding: 0 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+a{
+  text-decoration: none;
+}
+.nav1 {
+  height: 100%;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vw;
+}
+.nav1 img {
+  height: 50%;
+}
+.nav1 a {
+  text-decoration: none;
+  font-family: myntraBold;
+  color: rgb(19, 18, 18);
+  font-size: 1.1vw;
+}
+.nav2 {
+  height: 100%;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vw;
+  padding: 1vw;
+}
+.nav2 input {
+  height: 2.8vw;
+  width: 25vw;
+  padding: 0 1vw;
+  background-color: rgb(247, 246, 246);
+  color: #727389;
+  outline: none;
+  border: none;
+  border-radius: 0 0.2vw 0.2vw 0;
+  font-size: 1.3vw;
+  font-family: myntraRegular;
+  /* border-top: 0.1vw solid #727389;
+    border-right: 0.1vw solid #727389;
+    border-bottom: 0.1vw solid #727389; */
+}
+.nav2 .searchDiv {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  color: #727389;
+  /* background-color: rgb(173, 173, 173); */
+}
+.nav2 .searchDiv .search {
+  height: 2.8vw;
+  width: 3vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+  font-family: myntraRegular;
+  background-color: rgb(247, 246, 246);
+  /* border-top: 0.1vw solid #727389;
+    border-left: 0.1vw solid #727389;
+    border-bottom: 0.1vw solid #727389; */
+  border-radius: 0.2vw 0 0 0.2vw;
+}
+.nav2 .icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: myntraRegular;
+  font-family: 10vw;
+}
+.nav2 .icon {
+  font-size: 1.4vw;
+  color: #727389;
+}
+.nav2 div .details {
+  font-family: myntraBold;
+  font-size: 0.9vw;
+  color: rgb(19, 18, 18);
+}
+.biggestDeals {
+  margin-top: 5vw;
+  font-family: myntraBold;
+  font-weight: 900;
+  margin-left: 3vw;
+  font-size: 2.5vw;
+  color: #525253;
+}
+.container1 {
+  height: auto;
+  width: 100%;
+  /* background-color: red; */
+  padding: 2vw 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4vw;
+  margin-top: 2vw;
+}
+.container1 .product {
+  height: 20vw;
+  width: 16%;
+  /* background-color: green; */
+  border: 0.1vw solid #d4d4d6;
+  /* padding: 0.2vw; */
+  border-radius: 0.2vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.container1 .product img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+.container1 .product h2 {
+  font-family: myntraBold;
+  margin-top: 5%;
+  font-size: 2.5vw;
+  color: #525253;
+}
+.footer {
+  height: auto;
+  width: 100%;
+  padding: 2vw;
+  /* background-color: red; */
+  display: flex;
+  gap: 2vw;
+  background-color: rgb(253, 252, 252);
+}
+.footer .section {
+  width: 20%;
+  padding: 2vw;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+}
+.footer .section h6 {
+  font-size: 1vw;
+  font-family: myntraBold;
+  margin-bottom: 1.8vw;
+  color: #39393a;
+}
+.footer .section a {
+  text-decoration: none;
+  font-family: myntraRegular;
+  color: #727389;
+  margin-bottom: 1vw;
+}
+.footer .section img {
+  height: 20%;
+  width: 70%;
+  margin-top: 1vw;
+}
+.copyright {
+  height: 5vw;
+  width: 100%;
+  background-color: rgb(253, 252, 252);
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.1vw solid #e2e2e2;  
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #39393a;
+  font-family: myntraRegular;
+  
+}
+.copyright p {
+  text-decoration: none;
+  font-family: myntraRegular;
+  color: #727389;
+}
+.copyright p a {
+  text-decoration: none;
+  font-family: myntraBold;
+  color: blue;
+  /* color: #727389; */
+}
+.watchListNav{
+  height: 5vw;
+  width: 100%;
+  /* background-color: red; */
+  border-bottom: 0.1vw solid #c9c7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.watchListNav img{
+  height: 100%;
+  object-fit: cover;
+}
+.watchlist{
+  height: auto;
+  width: 100%;
+  /* background-color: red; */
+  padding: 2vw;
+  display: flex;
+  gap: 3vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.watchlist .watchListProducts{
+  height: 30vw;
+  width:  45%;
+  /* background-color: green; */
+  border: 0.1vw solid #c9c7c7; 
+  display: flex;
+}
+.watchListProducts .left{
+  height: 100%;
+  width: 50%;
+  /* background-color: yellow; */
+}
+.watchListProducts .right{
+  height: 100%;
+  width: 50%;
+  /* background-color: crimson; */
+  padding: 2vw ;
+
+}
+.watchListProducts .left img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.watchListProducts .right h3{
+  font-family: myntraBold;
+  font-size: 2vw;
+}
+
+.watchListProducts .right p{
+  font-family: myntraRegular;
+  font-size: 1.4vw;
+  margin-top: 1vw;
+}
+.watchListProducts .right h5{
+  font-family: myntraBold;
+  font-size: 1.2vw;
+  margin-top: 0.8vw;
+}
+.watchListProducts .right button{
+  padding: 0.5vw 1.5vw;
+  font-family: myntraBold;
+  background-color: rgb(243, 176, 52);
+  color: white;
+  font-size: 1.5vw;
+  margin-top: 0.8vw;
+  border: none;
+  outline: none;
+  border-radius: 0.5vw;
+}
+.contactUs{
+  height: auto;
+  width: 100%;
+  /* background-color: red; */
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactUs form{
+  width: 70%;
+  height: auto;
+  border: 0.1vw solid #c9c7c7;
+  border-radius: 1vw;
+  padding: 2vw;
+}
+.contactUs form h1{
+  font-family: myntraBold;
+  font-size: 3vw;
+  color: #323233;
+}
+.contactUs form div{
+  width: 100%;
+}
+.contactUs form div label{
+  font-size: 1.3vw;
+  font-family: myntraRegular;
+
+}
+.contactUs form div input{
+  width: 100%;
+  margin-top: 1vw;
+  height: 2.5vw;
+  font-size: 1.3vw;
+  padding: 1vw;
+  /* border: none; */
+  border: 0.1vw solid #c9c7c7; 
+  outline: none;
+  border-radius: 0.3vw;
+}
+.contactUs form div textarea{
+  width: 100%;
+  border: 0.1vw solid #c9c7c7; 
+  outline: none;
+  border-radius: 0.3vw;
+  margin-top: 1vw;
+  font-size: 1.3vw;
+}
+.contactUs form div button{
+  padding: 1vw 2vw;
+  font-size: 1.7vw;
+  margin-top: 1vw;
+  border: none;
+  outline: none;
+  border-radius: 0.3vw;
+  background-color: rgb(243, 176, 52);
+  color: white;
+}
+.profile{
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile form{
+  height: 20vw;
+  width: 40%;
+  /* background-color: green; */
+  padding: 2vw;
+  border: 0.1vw solid #c9c7c7;
+  border-radius: 1vw;
+}
+
+.profile form div label{
+  font-size: 1.3vw;
+  font-family: myntraRegular;
+
+}
+.profile form div input{
+  width: 100%;
+  margin-top: 1vw;
+  height: 2.5vw;
+  font-size: 1.3vw;
+  padding: 1vw;
+  /* border: none; */
+  border: 0.1vw solid #c9c7c7; 
+  outline: none;
+  border-radius: 0.3vw;
+}
+.profile form  button{
+  padding: 0.5vw 2vw;
+  font-size: 1.7vw;
+  margin-top: 1vw;
+  border: none;
+  outline: none;
+  border-radius: 0.3vw;
+  background-color: rgb(243, 176, 52);
+  color: white;
+}
+.sucessfully-login{
+  height: 20vw;
+  width: 40%;
+  /* background-color: red; */
+  margin: auto;
+  margin-top: 2vw;
+  margin-top: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: myntraBold;
+  font-size: 1.5vw;
+}
+.sucessfully-login button{
+  padding: 0.5vw 2vw;
+  font-size: 1.7vw;
+  margin-top: 1vw;
+  border: none;
+  outline: none;
+  border-radius: 0.3vw;
+  background-color: rgb(230, 67, 67);
+  color: white;
+}
