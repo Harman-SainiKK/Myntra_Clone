@@ -179,6 +179,7 @@ a{
   font-family: myntraRegular;
   color: #727389;
   margin-bottom: 1vw;
+  font-size: 1.2vw;
 }
 .footer .section img {
   height: 20%;
@@ -200,18 +201,24 @@ a{
   text-decoration: none;
   color: #39393a;
   font-family: myntraRegular;
+  font-size: 1.2vw;
+
   
 }
 .copyright p {
   text-decoration: none;
   font-family: myntraRegular;
   color: #727389;
+  font-size: 1.2vw;
+
 }
 .copyright p a {
   text-decoration: none;
   font-family: myntraBold;
   color: blue;
   /* color: #727389; */
+  font-size: 1.2vw;
+
 }
 .watchListNav{
   height: 5vw;
