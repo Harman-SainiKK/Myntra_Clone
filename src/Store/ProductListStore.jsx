@@ -4,7 +4,7 @@ export const ProductList = createContext({
   productList: [],
   sendProducts: () => {},
   submitData: () => {},
-  logout:()=>{},
+  logout: () => {},
 });
 
 const productListReducer = (currValue, action) => {
@@ -30,17 +30,19 @@ const ProductListProvider = ({ children }) => {
     });
   };
 
-  const submitData = ()=>{
-    console.log("submit")
-    setsuccessfull(true)
-  }
+  const submitData = () => {
+    console.log("submit");
+    setsuccessfull(true);
+  };
 
-  const logout = ()=>{
-    console.log("logout")
-    setsuccessfull(false)
-  }
+  const logout = () => {
+    console.log("logout");
+    setsuccessfull(false);
+  };
   return (
-    <ProductList.Provider value={{ productList, sendProducts, submitData,successfull,logout }}>
+    <ProductList.Provider
+      value={{ productList, sendProducts, submitData, successfull, logout }}
+    >
       {children}
     </ProductList.Provider>
   );

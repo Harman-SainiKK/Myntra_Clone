@@ -3,26 +3,24 @@ import React, { useRef } from "react";
 import { Form, useNavigate } from "react-router-dom";
 import myntraImg from "../Images/330-3306304_myntra-logo-transparent-png-myntra-online-shopping-app-removebg-preview.png";
 const ContactUs = () => {
+  const navigate = useNavigate();
+  const fname = useRef();
+  const lname = useRef();
+  const email = useRef();
+  const message = useRef();
 
-    const navigate =  useNavigate()
-    const fname = useRef()
-    const lname = useRef()
-    const email = useRef()
-    const message = useRef()
-
-    const submit = (e)=>{
-        console.log("submit")
-        alert("Submited")
-        fname.current.value = ""
-        lname.current.value = ""
-        email.current.value = ""
-        message.current.value = ""
-        
-    }
+  const submit = (e) => {
+    console.log("submit");
+    alert("Submited");
+    fname.current.value = "";
+    lname.current.value = "";
+    email.current.value = "";
+    message.current.value = "";
+  };
   return (
     <>
       <div className="watchListNav">
-        <img src={myntraImg} alt="" onClick={()=> navigate("/")} />
+        <img src={myntraImg} alt="" onClick={() => navigate("/")} />
       </div>
       <div className="contactUs">
         <Form onSubmit={submit}>
@@ -46,7 +44,7 @@ const ContactUs = () => {
             <label htmlFor="message">Message</label>
             <br />
             <textarea
-            ref={message}
+              ref={message}
               name="message"
               id="message"
               cols={20}
@@ -55,10 +53,9 @@ const ContactUs = () => {
             ></textarea>
           </div>
           <div>
-          <button>Submit</button>
-        </div>
+            <button>Submit</button>
+          </div>
         </Form>
-        
       </div>
     </>
   );

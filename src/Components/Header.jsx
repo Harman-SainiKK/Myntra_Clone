@@ -36,9 +36,9 @@ const Header = ({ searchData }) => {
         <div className="nav2">
           <div className="searchDiv">
             <p className="search">
-              <IoMdSearch></IoMdSearch>
+              <IoMdSearch onClick={SumitData}></IoMdSearch>
             </p>
-            <form onSubmit={SumitData}>
+            <form onSubmit={SumitData} id="fetch">
               <input
                 type="text"
                 placeholder="Search for products, brands and more"

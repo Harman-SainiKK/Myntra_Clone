@@ -81,28 +81,24 @@ const router = createBrowserRouter([
   // {
   //   path: "/WatchesLists",
   //   element: <WatchesLists />,
-    
+
   // },
   {
     path: "/Profile",
     element: <Profile />,
-    
   },
   {
     path: "/Bag",
     element: <Bag />,
-    
   },
   {
-    path:"/Footer",
-    element:<Footer/>
+    path: "/Footer",
+    element: <Footer />,
   },
   {
-    path:"/ContactUs",
-    element:<ContactUs></ContactUs>
-  }
-  
-  
+    path: "/ContactUs",
+    element: <ContactUs></ContactUs>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
